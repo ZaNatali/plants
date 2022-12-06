@@ -1,0 +1,75 @@
+
+    .services-manu{
+        @include flexCenter(flex, center, center);
+        @include flexWrap(flex,wrap);
+        height: 1311px;
+        width: $width-mobil;
+        background-color:$backgraund-color;
+        .text{
+            @include flexColunm (flex, column,center);
+            justify-content: space-between;
+            height: 163px;
+            width: 100%;
+            margin: 50px 15px 30px 15px;
+            h2{
+                height: 38px;
+                width: 100%;
+                font-family: 'Nunito';
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 38px;
+                color: $typography-color;
+                text-align: center;
+                span{
+                    color: $color-main;
+                }
+            }
+            p{
+                height: 110px;
+                width: 100; 
+                font-family: 'Nunito';
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                color: $paragraf-color;
+                text-align: center;
+            }
+        }
+        .cards{
+            margin: 0px 15px 0px 15px;
+            height: 1068px;
+            width: 100%;
+            .layer{
+                @include flexCenter(flex, space-between, center);
+                height: 116px;
+                width: 100%;
+                margin-bottom: 20px;
+                background-color: white;
+                background-image: url(./images/Services-menu/Icon-leaf.svg);
+                background-repeat: no-repeat;
+                img{
+                    margin: 33px 20px 33px 20px;
+                } 
+                div{
+                    @include flexColunm(flex, column, flex-start);
+                    justify-content: center;
+                    row-gap: 10px;
+                    h3{
+                        height: 22px;
+                        font-family: 'Nunito';
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 22px;
+                        color: $typography-color;
+                    } 
+                    p{
+                        font-family: 'Nunito';
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        color: $paragraf-color;
+                    }  
+                }         
+            }
+        }
+    }

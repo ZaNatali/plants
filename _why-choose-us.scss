@@ -1,0 +1,82 @@
+.choose-us{
+    @include flexColunm(flex, column, center);
+    align-content: space-between;
+    height: 684px;
+    width: $width-mobil;
+    padding: 50px 15px 50px 15px;
+    background-image: url(./images/Why-Choose-us/BG.svg);
+    img{
+        height: 217px;
+        width: $width-mobil;
+        background-color: #C4C4C4;
+    }
+    h2{
+        align-items: center;
+        font-family: 'Nunito';
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 38px;
+        color: $color-white;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    p{
+        font-family: 'Nunito';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        color:$color-white;
+        text-align: center;
+    }
+    form{
+        
+        @include flexCenter (flex, space-between, center);
+        @include flexWrap (flex, wrap);
+        align-content: space-between;
+        flex-direction: row;
+        height: 64px;
+        width: 345px;
+        margin-top: 40px;
+        row-gap: 20px;
+        column-gap: 29px;
+        div{
+            @include flexCenter (flex, space-between, center);
+            height: 22px;
+            width: 158px;
+            input{
+                height: 20px;
+                width: 20px;
+                
+            }
+            label{
+                font-family: 'Nunito';
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 22px;
+                width: 128px;
+                left: 30px;
+                color: $color-white;
+            }
+        }
+    }
+    button{
+        height: 40px;
+        width: 167px;
+        margin-top: 30px;
+        border-radius: 5px;
+        background-color: $color-main; 
+        border-radius: 5px;
+        border: solid 0px;
+        font-family: 'Nunito';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        color: $color-white;
+        &:hover{
+            background-color: $color-white;
+            border: solid 1px $color-main;
+            color: $color-main;
+            cursor: pointer;
+        }
+    } 
+}

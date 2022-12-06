@@ -1,0 +1,54 @@
+.CTA{
+    @include flexCenter (flex, center, center);
+    height: 224px;
+    width: $width-mobil;
+    padding: 0px 15px 0px 15px;
+    background-color: $backgraund-color;
+    background-image: url(./images/CTA/Rectangle\ 2684.svg);
+    background-repeat:no-repeat;
+    background-position: center;
+    div{
+        height: 124px;
+        width: $width-mobil;
+        @include flexColunm (flex, column, center);
+        justify-content: space-between;
+        h4{
+            height: 54px;
+            width: 272px;
+            font-family: 'Nunito';
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 27px;
+            text-align: center;
+            color: $color-white;
+
+        }
+        button{
+            height: 40px;
+            line-height: 40px;
+            width: 137px;
+            border-radius: 5px;
+            padding: 10px 0px 10px 0px;
+            border: solid 0px;
+            font-family: 'Nunito';
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 19px;
+            color: $color-main;
+            &:hover{
+                background-color: $color-main;
+                color: $color-white;
+                cursor: pointer;
+            }
+            img{
+                
+                width: 20px;
+                height: 20px;
+            }
+        } 
+    }
+
+
+    
+
+}

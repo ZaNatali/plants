@@ -1,0 +1,34 @@
+// color
+
+$color-white: #fff;
+$color-main: #00730c;
+$color-templain: #0c4b35;
+$typography-color: #212529;
+$backgraund-color: #f6f6f6;
+$paragraf-color: #676767;
+$fone-color: #e6f6ea;
+
+// widgh
+$width-mobil: (
+    min-width: 375px,
+  )
+  and
+  (
+    max-width: 768px,
+  );
+
+// mixin
+@mixin flexCenter($flex, $justify, $align) {
+  display: $flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin flexWrap($flex, $wrap) {
+  display: $flex;
+  flex-wrap: $wrap;
+}
+@mixin flexColunm($flex, $column, $center) {
+  display: $flex;
+  flex-direction: $column;
+  align-items: $center;
+}

@@ -1,0 +1,94 @@
+.about-us{    
+    @include flexCenter(flex, center, stretch);
+    @include flexWrap(flex,wrap);
+    align-content: space-between;
+    height: 1231px;
+    width: $width-mobil;
+    padding: 0px 15px 0px 15px;
+    background-color: $backgraund-color;
+
+    .tree-img{
+        width: 100%;
+        height: 462px;
+        background-color: $color-main;
+
+    }
+    div{
+        @include flexColunm(flex, column, center);
+        justify-content: space-between;
+        h2{
+            align-items: center;
+            font-family: 'Nunito';
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 38px;
+            color: $typography-color;
+            span{
+                color: $color-main;
+            }
+        }
+        p{
+            font-family: 'Nunito';
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            color: $paragraf-color;
+        }
+    }
+    .icon{
+        @include flexCenter (flex, space-between, center);
+        @include flexWrap (flex, wrap);
+        align-content: space-between;
+        flex-direction: row;
+        height: 208px;
+        width: 100%;
+        margin-top: 40px;
+
+        div{
+            @include flexCenter( flex,center,center);
+            background-color: $color-white;
+            height: 94px;
+            width: 162px;
+            padding: 15px;
+            div{
+                @include flexCenter(flex, center, center);
+                align-content: space-between;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: $color-main;
+
+            }
+            p{
+                font-family: 'Nunito';
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 19px;
+                text-align: center;
+                height: 19px;
+                width: 132px;
+                color: $typography-color;
+                margin-top: 5px;
+            }
+        }  
+    }
+    button{
+        height: 40px;
+        width: 167px;
+        border-radius: 5px;
+        background-color: $color-main; 
+        border-radius: 5px;
+        border: solid 0px;
+        font-family: 'Nunito';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        color: $color-white;
+        &:hover{
+            background-color: $color-white;
+            border: solid 1px $color-main;
+            color: $color-main;
+            cursor: pointer;
+        }
+    }    
+}

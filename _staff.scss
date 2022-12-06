@@ -1,0 +1,88 @@
+.staff{
+    @include flexColunm (flex, column, center);
+    justify-content: space-between;
+    height: 754px;
+    width: $width-mobil;
+    padding: 50px 15px 50px 15px;
+    background-color: $backgraund-color;
+    h2{
+        align-items: center;
+        font-family: 'Nunito';
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 38px;
+        color: $typography-color;
+        span{
+            color: $color-main;
+        }
+    }
+    p{
+        width: 100%;
+        font-family: 'Nunito';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        color: $paragraf-color;
+        text-align: center;
+    }
+    button{
+        height: 40px;
+        width: 167px;
+        border-radius: 5px;
+        background-color: $color-main; 
+        border-radius: 5px;
+        border: solid 0px;
+        font-family: 'Nunito';
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        color: $color-white;
+        &:hover{
+            background-color: $color-white;
+            border: solid 1px $color-main;
+            color: $color-main;
+            cursor: pointer;
+        }
+    } 
+    div{
+        @include flexCenter (flex, center, flex-end);
+        height: 343px;
+        width: 100%;
+        height: 343px;
+        border-radius: 5px;
+        background-color: #c4c4c4;
+        div{
+            @include flexColunm (flex, column, center);
+            height: 62px;
+            width: 100%;
+            border-radius: 5px;
+            background-image: linear-gradient(to bottom, rgba(251, 246, 238, 0.01), rgba(0, 115, 12, 0.81));
+            h5{
+                font-family: 'Nunito';
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 25px;
+                height: 25px;
+                width: 105px;
+                color: $color-white;
+            }
+            p{              
+                font-family: 'Nunito';
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                height: 22px;
+                width: 90px;
+                color: $color-white;
+            }      
+        }
+    }
+    .slider{
+        height: 6px;
+        width: 178px;
+        background-image: url(./images/Staff/Slider.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $backgraund-color;
+    }
+}
